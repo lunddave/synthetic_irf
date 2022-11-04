@@ -111,7 +111,7 @@
 \title{Synthetic Impulse Response Functions}
 \author{David Lundquist\thanks{davidl11@ilinois.edu} }
 \affil{Department of Statistics, University of Illinois at Urbana-Champaign}
-\date{December Nov 3rd, 2022}
+\date{November 3rd, 2022}
 
 \begin{document}
 
@@ -121,6 +121,14 @@
 We adopt techniques from an inferential procedure known as synthetic control to construct a new impulse response function (IRF) estimator.  Distinct from estimates generated from Wold decomposition or local projections (LP), synthetic IRFs leverage information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a "donor pool".  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
 
 \end{abstract}
+
+Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$ could be used to maximize fit (loosely defined) in the context of impulse response function estimation.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $t^*$ is not observed and hence its magnitude must be inferred.
+
+\begin{enumerate}
+    \item Estimate the shock $\epsilon_i,t^*$ for each donor.
+    \item If estimate requires parametric assumption, then scale estimates appropriately to satisfy the unit-shock assumption.
+    \item Confidence intervals?  Strong assumptions needed?
+\end{enumerate}
 
 
 
