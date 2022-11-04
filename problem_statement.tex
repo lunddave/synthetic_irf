@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+
+% use packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[table,xcdraw,usenames]{xcolor}
+%\usepackage[usenames]{color}
+
+\usepackage{graphicx}
+%\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{authblk}
+\usepackage{bm}
+
+
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[caption = false]{subfig}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage[linesnumbered, ruled,vlined]{algorithm2e}
+\usepackage{pdflscape}
+
+% margin setup
+\usepackage{geometry}
+\geometry{margin=0.8in}
+
+
+% function definition
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\w}{\textbf{w}}
+\newcommand{\x}{\textbf{x}}
+\newcommand{\dbf}{\textbf{d}}
+\newcommand{\y}{\textbf{y}}
+\newcommand{\X}{\textbf{X}}
+\newcommand{\Y}{\textbf{Y}}
+\newcommand{\L}{\textbf{L}}
+\newcommand{\Hist}{\mathcal{H}}
+\newcommand{\Prob}{\mathbb{P}}
+\def\mbf#1{\mathbf{#1}} % bold but not italic
+\def\ind#1{\mathrm{1}(#1)} % indicator function
+\newcommand{\simiid}{\stackrel{iid}{\sim}} %[] IID 
+\def\where{\text{ where }} % where
+\newcommand{\indep}{\perp \!\!\! \perp } % independent symbols
+\def\cov#1#2{\mathrm{Cov}(#1, #2)} % covariance 
+\def\mrm#1{\mathrm{#1}} % remove math
+\newcommand{\reals}{\mathbb{R}} % Real number symbol
+\def\t#1{\tilde{#1}} % tilde
+\def\normal#1#2{\mathcal{N}(#1,#2)} % normal
+\def\mbi#1{\boldsymbol{#1}} % Bold and italic (math bold italic)
+\def\v#1{\mbi{#1}} % Vector notation
+\def\mc#1{\mathcal{#1}} % mathical
+\DeclareMathOperator*{\argmax}{arg\,max} % arg max
+\DeclareMathOperator*{\argmin}{arg\,min} % arg min
+\def\E{\mathbb{E}} % Expectation symbol
+\def\mc#1{\mathcal{#1}}
+\def\var#1{\mathrm{Var}(#1)} % Variance symbol
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} % checkmark
+\newcommand\red[1]{{\color{red}#1}}
+\def\bs#1{\boldsymbol{#1}}
+\def\P{\mathbb{P}}
+\def\var{\mathbf{Var}}
+\def\naturals{\mathbb{N}}
+\def\cp{\overset{p}{\to}}
+\def\clt{\overset{\mathcal{L}^2}{\to}}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\newtheorem{corollary}{Corollary}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert} % A norm with 1 argument
+\DeclareMathOperator{\Var}{Var} % Variance symbol
+
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem{remark}{Remark}
+\hypersetup{
+  linkcolor  = blue,
+  citecolor  = blue,
+  urlcolor   = blue,
+  colorlinks = true,
+} % color setup
+
+% proof to proposition 
+\newenvironment{proof-of-proposition}[1][{}]{\noindent{\bf
+    Proof of Proposition {#1}}
+  \hspace*{.5em}}{\qed\bigskip\\}
+% general proof of corollary
+  \newenvironment{proof-of-corollary}[1][{}]{\noindent{\bf
+    Proof of Corollary {#1}}
+  \hspace*{.5em}}{\qed\bigskip\\}
+% general proof of lemma
+  \newenvironment{proof-of-lemma}[1][{}]{\noindent{\bf
+    Proof of Lemma {#1}}
+  \hspace*{.5em}}{\qed\bigskip\\}
+
+\allowdisplaybreaks
+
+\title{Synethic Impulse Response Functions}
+\author{David Lundquist\thanks{davidl11@ilinois.edu} }
+\affil{Department of Statistics, University of Illinois at Urbana-Champaign}
+\date{December Nov 3rd, 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We adopt techniques from an inferential procedure known as synthetic control to construct a new impulse response function (IRF) estimator.  Distinct from estimates generated from Wold decomposition or local projections (LP), synthetic IRFs leverage information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a "donor pool".  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
+
+\end{abstract}
+
+
+
+
+
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{synthVolForecast}
+%\bibliography{../synthetic-prediction-notes}
+
+  
+\end{document}
+
+
