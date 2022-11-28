@@ -142,9 +142,24 @@ Ideas
     \item Can we used synthetic vol forecasting for Value-at-Risk (VaR)?
 \end{enumerate}
 
+\section{The estimand}
+
+In a multivariate time series of dimension $K$, the response $i$th-step-ahead response of component $j$ to a shock in component $k$ at time $t$ is
+
+\[
+   \frac{\partial y_{j,t+i}}{\partial w_{k,t}}
+\]
+
+where $w_{t}$ is the vector of innovations at time $t$ for some model $y_{t} = f(\mathcal{F}_{t-1}) + w_{t}$.
+
+\section{Estimators}
+
+Estimators for an IRF may come in at least two forms: model-specific and model independent.
+
+\subsection{Unit shock - what does it mean to be scale-free or scale-independent?}
 
 
-
+\section{The Special Case of Vector Autoregressions (VAR)}
 
 
 
