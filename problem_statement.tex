@@ -118,7 +118,7 @@
 \maketitle
 
 \begin{abstract}
-We adopt techniques from an inferential procedure known as synthetic control to construct a new impulse response function (IRF) estimator.  Distinct from estimates generated from Wold decomposition or local projections (LP), synthetic IRFs leverage information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a ``donor pool".  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
+We adopt techniques from an inferential procedure known as synthetic control to construct a new impulse response function (IRF) estimator.  Distinct from estimates generated from the Wold decomposition or local projections (LP), synthetic IRFs leverage information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a ``donor pool".  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
 
 \end{abstract}
 
@@ -129,10 +129,14 @@ The technique of distanced-based weighting and synthetic, aggregation methods is
 Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$ could be used to maximize fit (loosely defined) in the context of impulse response function estimation.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $t^*$ is not observed and hence its magnitude must be inferred.
 
 \begin{enumerate}
-    \item Estimate the shock $\epsilon_{i,t^*}$ for each donor - use residuals, perhaps?
+    \item Estimate the shock $\epsilon_{i,t^*}$ for each donor.
+    \begin{enumerate}
+      \item Use estimated residuals
+      \item Use fixed effect to estimate shock.  Now, is this counter to VAR analysis?
+    \end{enumerate}
     \item If estimate requires parametric assumption, then scale estimates appropriately to satisfy the unit-shock assumption.
     \item Confidence intervals?  Strong assumptions needed?
-    \item Need to be very clear about whether this is an inferential or predictive tool.
+    \item Need to be very clear about whether this is an inferential or predictive tool.  Or is it both?
 \end{enumerate}
 
 Questions
@@ -146,12 +150,9 @@ Questions
 
 \end{enumerate}
 
-To apply the synthetic paradigm, we'd want to look for other cases of shocks to series B.
-
-1) read  \citet{ho2023averaging}
-
 \begin{enumerate}
     \item Can we use the Wold decomposition as ground truth?
+    \item read \citet{ho2023averaging}
     \item Can we used synthetic vol forecasting for Value-at-Risk (VaR)?
 \end{enumerate}
 
@@ -171,17 +172,10 @@ Estimators for an IRF may come in at least two forms: model-specific and model i
 
 \subsection{Unit shock - what does it mean to be scale-free or scale-independent?}
 
-
 \section{The Special Case of Vector Autoregressions (VAR)}
-
-
-
-
 
 \bibliographystyle{plainnat}
 \bibliography{problem_statement}
-%\bibliography{../synthetic-prediction-notes}
-
   
 \end{document}
 
