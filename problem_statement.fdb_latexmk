@@ -2,14 +2,14 @@
 ["bibtex problem_statement"] 0 "problem_statement.aux" "problem_statement.bbl" "problem_statement" 0 -1
   "./problem_statement.bib" 1702782614 36962 c3aee69eaa9d2b2835f3a65453d3b751 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "problem_statement.aux" 1705260832 1312 3c23edc2953afa18f552cbed8a6995b2 "pdflatex"
+  "problem_statement.aux" 1705376260 1574 682e9e597924337bcf0b359b3428a4b0 "pdflatex"
   (generated)
   "problem_statement.bbl"
   "problem_statement.blg"
   (rewritten before read)
-["pdflatex"] 1705260831 "/home/david/Desktop/synthetic_irf/problem_statement.tex" "problem_statement.pdf" "problem_statement" 1705260833 2
+["pdflatex"] 1705376259 "/home/david/Desktop/synthetic_irf/problem_statement.tex" "problem_statement.pdf" "problem_statement" 1705376261 2
   "/etc/texmf/web2c/texmf.cnf" 1697949250 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/david/Desktop/synthetic_irf/problem_statement.tex" 1705260829 7219 9029f3b9bd77940f3f49cb0acdc5d90d ""
+  "/home/david/Desktop/synthetic_irf/problem_statement.tex" 1705376257 7559 0d8456e54c5d6f8f2f44bb4291ce65c2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
@@ -213,10 +213,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1693172360 40357 c95f5d5e031b5c7040b426833c11f2e0 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1699342062 4643645 d2d1d8b8ba87ed005f4aaf1ce646a79e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1699342141 7908406 a5819e2fc9fde239037adccde2ee8538 ""
-  "problem_statement.aux" 1705260832 1312 3c23edc2953afa18f552cbed8a6995b2 "pdflatex"
-  "problem_statement.bbl" 1705260796 0 d41d8cd98f00b204e9800998ecf8427e "bibtex problem_statement"
-  "problem_statement.out" 1705260832 1044 9a28ebe3b2e8df579639bf195d0f5bcf "pdflatex"
-  "problem_statement.tex" 1705260829 7219 9029f3b9bd77940f3f49cb0acdc5d90d ""
+  "problem_statement.aux" 1705376260 1574 682e9e597924337bcf0b359b3428a4b0 "pdflatex"
+  "problem_statement.bbl" 1705376031 0 d41d8cd98f00b204e9800998ecf8427e "bibtex problem_statement"
+  "problem_statement.out" 1705376260 1458 70d7a6ec070d9005a562b28256156eda "pdflatex"
+  "problem_statement.tex" 1705376257 7559 0d8456e54c5d6f8f2f44bb4291ce65c2 ""
   (generated)
   "problem_statement.aux"
   "problem_statement.log"

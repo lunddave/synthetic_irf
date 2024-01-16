@@ -124,36 +124,46 @@ We adopt techniques from an inferential procedure known as synthetic control to 
 
 \section{Introduction}
 
-The technique of distanced-based weighting and synthetic, aggregation methods is naturally suited to IRF and vector autoregressions more generally due to the multivariate setting that comes for free.  There is no need to search for predictive or otherwise informative covariates.  
+The technique of distanced-based weighting and synthetic, aggregation methods is naturally suited to IRF and vector autoregressions more generally due to the multivariate setting that comes for free.  There is not necessarily a need to locate predictive or otherwise informative covariates.  
 
-Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$ could be used to maximize fit (loosely defined) in the context of impulse response function estimation.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $t^*$ is not observed and hence its magnitude must be inferred.
+Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$ could be used to maximize fit (loosely defined) in the context of impulse response function estimation.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $T^*$ is not observed and hence its magnitude must be inferred.
 
 \begin{enumerate}
-    \item Estimate the shock $\epsilon_{i,t^*}$ for each donor.
+    \item Estimate the shock $\epsilon_{i,T^*+1}$ for each donor.
     \begin{enumerate}
       \item Use estimated residuals
       \item Use fixed effect to estimate shock.  Now, is this counter to VAR analysis?
     \end{enumerate}
-    \item If estimate requires parametric assumption, then scale estimates appropriately to satisfy the unit-shock assumption.
+    \item If the estimation technique parametric assumption, then we can scale estimates appropriately to satisfy the unit-shock assumption.
     \item Confidence intervals?  Strong assumptions needed?
     \item Need to be very clear about whether this is an inferential or predictive tool.  Or is it both?
 \end{enumerate}
 
-Questions
+\section{Questions}
+
 \begin{enumerate}
   \item Do we wait until the shock has already manifested?
-  \item If so, then it's different from other applications of post-shock forecasting.
-  \item If not, then are we combining post-shock forecasting with IRF-forecasting?
-  \item Perhaps that for the TSUS, we can avoid assuming a particular model / method for the IRF and can instead just use dbw on the IRFs of the donors. How do we get IRFs of donors? Either MA rep or local projections
+  \begin{enumerate}
+    \item If so, then it's different from other applications of post-shock forecasting.
+    \item If not, then are we combining post-shock forecasting with IRF estimation?
+  \end{enumerate}
+\end{enumerate}
+
+\subsection{What are we estimating and what are we adjusting?}
+\begin{enumerate}
+  \item Do we need to estimate a model for the time series under study and then adjust that model?
+  \begin{enumerate}
+  \item Perhaps that for the TSUS, we can avoid assuming a particular model / method for the IRF and can instead just use dbw on the IRFs of the donors. 
+  \end{enumerate}
+  \item How do we get IRFs of donors? Either MA representation or local projections?
   \item What is it exactly that we're trying to predict?  The effect of a size-delta shock in series A on series B exactly K time points after the shock has manifested.
   \item If we are willing to dispense with linearity (which seems like a reasonable choice, given that we're employing an approach that doesn't have a problem accommodating it)
-
 \end{enumerate}
 
 \begin{enumerate}
-    \item Can we use the Wold decomposition as ground truth?
+    \item Can we use the Wold Decomposition as ground truth?
     \item read \citet{ho2023averaging}
-    \item Can we used synthetic vol forecasting for Value-at-Risk (VaR)?
+    \item Can we use synthetic volatility forecasting for Value-at-Risk (VaR)?
 \end{enumerate}
 
 \section{The estimand}
