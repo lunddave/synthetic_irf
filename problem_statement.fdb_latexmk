@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex problem_statement"] 1706060950 "problem_statement.aux" "problem_statement.bbl" "problem_statement" 1706060952 2
-  "./problem_statement.bib" 1705186896 36962 c3aee69eaa9d2b2835f3a65453d3b751 ""
+["bibtex problem_statement"] 1709872229 "problem_statement.aux" "problem_statement.bbl" "problem_statement" 1709872300 0
+  "./problem_statement.bib" 1709872161 207 c6ed8b31a325a2c1bb3d59a0d40cecda ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "problem_statement.aux" 1706060951 1574 404f0739495e0c0dfe1c6d1320fa559a "pdflatex"
+  "problem_statement.aux" 1709872299 1650 8425b3d06081efe09564dd0b0736f937 "pdflatex"
   (generated)
   "problem_statement.bbl"
   "problem_statement.blg"
   (rewritten before read)
-["pdflatex"] 1706060951 "/Users/davidlundquist/Desktop/PhD/synthetic_irf/problem_statement.tex" "problem_statement.pdf" "problem_statement" 1706060952 2
-  "/Users/davidlundquist/Desktop/PhD/synthetic_irf/problem_statement.tex" 1706060946 7609 4d23a124d4bd561e1548f6b641c1499f ""
+["pdflatex"] 1709872299 "/Users/davidlundquist/Desktop/PhD/synthetic_irf/problem_statement.tex" "problem_statement.pdf" "problem_statement" 1709872300 0
+  "/Users/davidlundquist/Desktop/PhD/synthetic_irf/problem_statement.tex" 1709872299 7616 6c83021964e874a7c8499b3bcb86ca03 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -212,10 +212,10 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1705898765 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1705898712 7883459 cb6809e0afdf7777ef8c5f2f25f8f275 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "problem_statement.aux" 1706060951 1574 404f0739495e0c0dfe1c6d1320fa559a "pdflatex"
-  "problem_statement.bbl" 1706060950 0 d41d8cd98f00b204e9800998ecf8427e "bibtex problem_statement"
-  "problem_statement.out" 1706060951 1458 70d7a6ec070d9005a562b28256156eda "pdflatex"
-  "problem_statement.tex" 1706060946 7609 4d23a124d4bd561e1548f6b641c1499f ""
+  "problem_statement.aux" 1709872299 1650 8425b3d06081efe09564dd0b0736f937 "pdflatex"
+  "problem_statement.bbl" 1709872229 465 b2d93bdbd9e93d06ba2f40f1fc914d8a "bibtex problem_statement"
+  "problem_statement.out" 1709872299 1458 70d7a6ec070d9005a562b28256156eda "pdflatex"
+  "problem_statement.tex" 1709872299 7616 6c83021964e874a7c8499b3bcb86ca03 ""
   (generated)
   "problem_statement.aux"
   "problem_statement.log"

@@ -41,7 +41,7 @@
 \newcommand{\y}{\textbf{y}}
 \newcommand{\X}{\textbf{X}}
 \newcommand{\Y}{\textbf{Y}}
-\newcommand{\L}{\textbf{L}}
+%\newcommand{\L}{\textbf{L}}
 \newcommand{\Hist}{\mathcal{H}}
 \newcommand{\Prob}{\mathbb{P}}
 \def\mbf#1{\mathbf{#1}} % bold but not italic
@@ -124,9 +124,9 @@ We adopt techniques from an inferential tool known as synthetic control to const
 
 \section{Introduction}
 
-The technique of distanced-based weighting and synthetic, aggregation methods is naturally suited to IRF and vector autoregressions more generally due to the multivariate setting that comes for free.  There is not necessarily a need to locate predictive or otherwise informative covariates.  
+The technique of distanced-based weighting and synthetic aggregation methods is naturally suited to IRF and vector autoregressions more generally due to the multivariate setting that comes for free.  There is not necessarily a need to locate predictive or otherwise informative covariates, although there may be additional covariates that parameterize a shock distribution.
 
-Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$, i.e. a convex combination thereof, could be used to estimate the impulse response function of a multivariate time series.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $T^*$ is not observed and hence its magnitude must be inferred.
+Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}$, i.e. a convex combination thereof, could be used to estimate the impulse response function of a multivariate time series.  However, for a particular donor $d_{m}, m\in \mathcal{D}$, the shock at time $T_{m}^*$ is not observed and hence its magnitude must be inferred.
 
 \begin{enumerate}
     \item Estimate the shock $\epsilon_{i,T^*+1}$ for each donor.
@@ -163,7 +163,6 @@ Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}
 \begin{enumerate}
     \item Can we use the Wold Decomposition as ground truth?
     \item read \citet{ho2023averaging}
-    \item Can we use synthetic volatility forecasting for Value-at-Risk (VaR)?
 \end{enumerate}
 
 \section{The estimand}
