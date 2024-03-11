@@ -118,7 +118,7 @@
 \maketitle
 
 \begin{abstract}
-We adopt techniques from an inferential tool known as synthetic control to construct a new impulse response function (IRF) estimator for multivariate time series.  Distinct from estimates generated from the Wold Decomposition or local projections (LP), synthetic IRF (SIRF) leverages information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a ``donor pool".  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
+We adopt techniques from an inferential tool known as synthetic control to construct a new impulse response function (IRF) estimator for multivariate time series.  Distinct from estimates generated from the Wold Decomposition or local projections (LP), Synthetic IRF (SIRF) leverages information from the context surrounding a shock with the goals of both reducing risk while also limiting bias.  The method relies upon Wold and/or LP IRF estimates on multivariate time series from a donor pool, i.e. a collection of multivariate time series subject to a qualitatively similar shock.  These estimates in turn are aggregated using distanced-based weighting, a procedure in which the donor multivariate series are judged based on similarity to the target multivariate series.  We also develop a procedure to discount the donor series based on signal-to-noise ratio.  This adjustment supports the "unit-shock" convention used in impulse response function analysis.  Simulations and empirical examples are provided.
 
 \end{abstract}
 
@@ -138,6 +138,9 @@ Challenge: suppose a researcher knew that a countable set of donors $\mathcal{D}
     \item Confidence intervals?  Strong assumptions needed?
     \item Need to be very clear about whether this is an inferential or predictive tool.  Or is it both?
 \end{enumerate}
+
+\section{Setting}
+We model structural shocks as affine functions of prevailing macroeconomic, financial, monetary, and/or technological conditions, with the motivation being that lurking danger is always tied to underlying structural variables.
 
 \section{Questions}
 
