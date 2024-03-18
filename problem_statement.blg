@@ -4,45 +4,45 @@ The top-level auxiliary file: problem_statement.aux
 The style file: plainnat.bst
 Database file #1: problem_statement.bib
 Warning--empty journal in ho2023averaging
-You've used 1 entry,
+You've used 2 entries,
             2773 wiz_defined-function locations,
-            596 strings with 4990 characters,
-and the built_in function-call counts, 445 in all, are:
-= -- 33
-> -- 30
-< -- 0
-+ -- 10
-- -- 9
-* -- 36
-:= -- 76
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 3
-duplicate$ -- 20
-empty$ -- 32
-format.name$ -- 10
-if$ -- 84
+            604 strings with 5154 characters,
+and the built_in function-call counts, 878 in all, are:
+= -- 75
+> -- 51
+< -- 1
++ -- 17
+- -- 15
+* -- 68
+:= -- 142
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 11
+chr.to.int$ -- 2
+cite$ -- 5
+duplicate$ -- 40
+empty$ -- 69
+format.name$ -- 19
+if$ -- 175
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 14
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 8
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 9
 quote$ -- 0
-skip$ -- 16
+skip$ -- 32
 stack$ -- 0
-substring$ -- 2
-swap$ -- 0
+substring$ -- 23
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
+type$ -- 22
 warning$ -- 1
-while$ -- 3
+while$ -- 8
 width$ -- 0
-write$ -- 18
+write$ -- 31
 (There was 1 warning)
